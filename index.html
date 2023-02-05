@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css">
+    <meta name="desctiption" content="Välkommen till Mathildas Portfolio, här kan du hitta olika projekt som jag har arbetat med under åren. Jag hoppas du gillar den">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <title>Mathildas Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="stylee.css" />
+  
+</head>
+<body class="container">
+<!-- Detta innehåller min logga och min meny. Endast Om Mig och kontakt knappen fungerar. Menyn är tänkt att göra till en hamurgemeny om jag skulle fått mer tid, då det är mycket att lära sig. I förhållande till wcag har jag utgått ifrån läsbarhet och höga konstraster. Det har även varit viktigt för mig att skärmläsare kan läsa mina bilder, och därför har jag lagt till alt text på samtliga bilder. Däremot har jag inte gjort det till mina länkar då det är utanför min makt när det är externa hemsidor-->
+    <header>
+        <div class="header">
+        <div class="logo_container">
+          <img class="logo" src="LogoMMM.svg" alt="Logotyp för hemsidan"/>
+          <h1 >Mathildas Portfolio</h1>
+        </div>
+        <div>
+          <nav>
+            <ul class="navigation">
+              <li><a href="#">Startsida</a></li>
+              <li><a href="#">CV</a></li>
+              <li><a href="#port">Portfolio</a></li>
+              <li><a href="#contact">Om mig</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div> 
+      </header>
+
+      <!-- Min hero är bilden över kajen och hälsningstexten. Här finns även en knapp som går direkt till "Om mig" -->
+      <div id="hero">
+        
+        <div class="hero-image" id="ltt">
+          <img class="stockholm" src="images/IMG_20220127_172312_2.jpg" alt="Utsikt över kajen i Chania, Grekland, himlen är blå och har ett par moln som täcker solen medan den går ner i horrisonten, man kan se dess ikoniska fyr och några båtar som har stannat vid land" />
+          <div class="hero-text">
+            <h1 >Hej!</h1>
+            <p>Välkommen till min Portfolio</p>
+            <button class="hire-me" href="#contact">Läs mer om mig här:</button>
+          </div>
+        </div>
+      </div>
+<!-- Innehåller om mig och kontakt. Här finns även en länk till min Portfolio -->
+        <div class="container2" >
+          <div class="om-mig"id="contact">
+            <div class="col-sm-4-bg-secondary">
+              <h2><br><br> Om mig och kontakt</h2>
+              <p>Mitt namn är Mathilda Molander Molin och är en UX-designer, grafisk kommunikatör, fotograf och den mest kreativa personen du känner. Här i min portfolio hittar du saker som jag har skapat, och jag hoppas du gillar dem. Anledningen till att du ska anställa mig är ipsum dolor sit amet consectetur adipisicing elit. Namsimilique dignissimos repellat, et maxime cum qui aliquam consequatur
+              possimus distinctio animi perferendis repudiandae quis obcaecati
+              ducimus eius dolore ad nostrum<br><br>
+              Om du vill kontakta mig får du gärna maila  <a href="mailto:mathilda.molin@chasacademy.se">mathilda.molin@chasacademy.se</a> <br><br>
+            Om du är nyfiken på de verk jag har gjort kika gärna i <a id="port" href="https://docs.google.com/presentation/d/1YS0NhebEm-AATDxwSuR7QOsoqN6SNPEQl0nBmhAnUac/edit?usp=sharing">denna Powerpoint</a> där du kan hitta fler verk jag har skapat. Exempel ser du nedan:</p>
+            </div><!-- <img id="bokomslag" src="20180307_140531.jpg" alt="Bokomslag på Kasou Ishiguros böcker Never let me go, the burried giant och remains of the day" /> -->
+
+              <img id="Bokomslag" src="images/20180307_140531.jpg"  onmouseover=start() onmouseout=dontWalk() width="700" height="400"/>
+          <!-- Här är min Javacript -->
+             <script>
+              function start(){
+                  document.getElementById('Bokomslag').src="images/Baksida.bokomslag.20180307_140612.jpg" alt="Bokomslag på Kasou Ishiguros böcker Never let me go, the burried giant och remains of the day. på denna bild visas baksidan";
+              }
+              function dontWalk(){
+                  document.getElementById('Bokomslag').src="images/20180307_140531.jpg"alt="Bokomslag på Kasou Ishiguros böcker Never let me go, the burried giant och remains of the day. Här visas framsidorna";
+              }
+          </script>
+          
+          </div> <br><br>
+          <a class="linktt" href="#ltt"><br>Tryck här för att komma till toppen<br><br><br></a>
+        </div>
+        
+        
+    
+</body>
+</html>
